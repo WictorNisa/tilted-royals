@@ -8,58 +8,61 @@
   </head>
   <body>
     <section class="main-wrapper">
-      <header class="header">
-        <div class="hero-header">
-          <img class="hero-img" src="img/hero.png" alt="team avatar">
+        <header class="header">
+          <div class="hero-header">
+            <img class="hero-img" src="img/hero.png" alt="team avatar">
+          </div>
+        </header>
+          <div class="container-one">
+            <div class="main-content">
+              <h1>Who are playing?</h1>
+              <form id="addForm">
+                <input type="text" class="formInput" id="item">
+                <div class="centerButton">
+                  <input type="submit" class="submitButton" value="Submit">
+                </div>
+              </form>
+              <h2 class="title">Players</h2>
+              <ul id="items" class="list-group">
+                <li class="list-group-item">Player 1<button class="deleteButton">X</button></li>
+                <li class="list-group-item">Player 2<button class="deleteButton">X</button></li>
+                <li class="list-group-item">Player 3<button class="deleteButton">X</button></li>
+                <li class="list-group-item">Player 4<button class="deleteButton">X</button></li>
+              </ul>
+          </div>
         </div>
-      </header>
-        <div class="container-one">
-          <div class="main-content">
-            <h1>Who are playing?</h1>
-            <form id="addForm">
-              <input type="text" class="formInput" id="item">
-              <div class="centerButton">
-                <input type="submit" class="submitButton" value="Submit">
-              </div>
-            </form>
-            <h2 class="title">Players</h2>
-            <ul id="items" class="list-group">
-              <li class="list-group-item">Player 1<button class="deleteButton">X</button></li>
-              <li class="list-group-item">Player 2<button class="deleteButton">X</button></li>
-              <li class="list-group-item">Player 3<button class="deleteButton">X</button></li>
-              <li class="list-group-item">Player 4<button class="deleteButton">X</button></li>
-            </ul>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="container-two">
-      <div class="team-splits">
         <div class="team-button">
           <button>Duo</button>
           <button>3 Man Squad</button>
           <button>4 Man Squad</button>
         </div>
-        <div class="team-border">
-          <ul id="teams" class="list-group-teams">
-            <li class="list-group-item">Player 1</li>
-            <li class="list-group-item">Player 2</li>
-            <li class="list-group-item">Player 3</li>
-            <li class="list-group-item">Player 4</li>
-          </ul>
-        </div>
+      <section class="container-two">
+        <div class="team-splits">
+          <!-- <div class="team-button">
+            <button>Duo</button>
+            <button>3 Man Squad</button>
+            <button>4 Man Squad</button>
+          </div> -->
+          <div class="team-border">
+            <ul id="teams" class="list-group-teams">
+              <li class="list-group-item">Player 1</li>
+              <li class="list-group-item">Player 2</li>
+              <li class="list-group-item">Player 3</li>
+              <li class="list-group-item">Player 4</li>
+            </ul>
+          </div>
 
-        <div class="team-border">
-          <ul id="teams" class="list-group-teams">
-            <li class="list-group-item">Player 1</li>
-            <li class="list-group-item">Player 2</li>
-            <li class="list-group-item">Player 3</li>
-            <li class="list-group-item">Player 4</li>
-          </ul>
-        </div>
+          <div class="team-border">
+            <ul id="teams" class="list-group-teams">
+              <li class="list-group-item">Player 1</li>
+              <li class="list-group-item">Player 2</li>
+              <li class="list-group-item">Player 3</li>
+              <li class="list-group-item">Player 4</li>
+            </ul>
+          </div>
 
-    </div>
+      </div>
+    </section>
     </section>
   </body>
   <script src="js/app.js"></script>

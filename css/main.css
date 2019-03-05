@@ -19,7 +19,7 @@ textarea, input {
 .main-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px repeat(2, 1fr);
+  grid-template-rows: 200px repeat(3, 1fr);
   grid-template-areas:
   'header' 'header' 'header'
   'containerOne' 'containerOne' 'containerOne'
@@ -33,6 +33,7 @@ textarea, input {
 .container-one {
   grid-area: containerOne;
   grid-column: 1 / 4;
+  grid-row: 2 / 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,10 +42,28 @@ textarea, input {
 
 .container-two {
   grid-area: containertwo;
-  grid-column: 1 / 4;
+  grid-column: 2 / 4;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.team-splits{
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-border {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / 4;
+  width: 400px;
+}
+
+.team-button {
+  display: block;
+
+  grid-column: 2 / 4
 }
 
 .hero-img {
@@ -69,6 +88,7 @@ h1 {
   font-size: 4em;
   text-align: center;
   margin-bottom: .7em;
+  font-family: 'Cinzel', serif;
 }
 
 h2 {
