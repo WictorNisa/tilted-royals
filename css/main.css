@@ -1,3 +1,173 @@
 
+* {
+  box-sizing: border-box;
+  font-weight: lighter;
+}
 
-/*# sourceMappingURL=output.css.map */
+html, body {
+ margin: 0;
+ padding: 0;
+}
+
+textarea, input {
+  outline: none;
+ }
+
+/* HEADER SECTION */
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px repeat(2, 1fr);
+  grid-template-areas:
+  'header' 'header' 'header'
+  'containerOne' 'containerOne' 'containerOne'
+  'containertwo' 'containertwo' 'containertwo';
+}
+
+.header {
+  grid-area: header;
+}
+
+.container-one {
+  grid-area: containerOne;
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-two {
+  grid-area: containertwo;
+  grid-column: 1 / 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-img {
+  width: 15%;
+  display: block;
+  margin: auto;
+  padding-top: 1em;
+  grid-column: 2 / 3;
+  transition: transform 1s;
+}
+
+.hero-img:hover{
+  transform: rotate(10deg) scale(1.1);
+}
+
+header {
+  grid-column: 1 / 4;
+  background-color: #6B756D;
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: .7em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+input[type=text] {
+  display: block;
+  width: 325px;
+  padding: 5px 0 5px 0;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 1.1em;
+  text-indent: 10px;
+  margin-bottom: 1em;
+}
+
+.formInput:focus{
+  border: 2px solid black;
+}
+
+.submitButton {
+  width: 250px;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: all 0.50s;
+}
+
+.submitButton:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transform: scale(1.1);
+
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 900px;
+
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;
+  align-items: center;
+}
+
+.deleteButton {
+  float: right;
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  border-radius: .2rem;
+}
+
+.deleteButton:hover {
+  border: 1px solid #471323;
+  transform: scale(1.1);
+}
+
+
+.list-group-teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

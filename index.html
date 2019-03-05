@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <title>Tilted Royals</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
   </head>
   <body>
     <section class="main-wrapper">
       <header class="header">
         <div class="hero-header">
-          <!-- <img src="img/hero.png" alt="team avatar"> -->
+          <img class="hero-img" src="img/hero.png" alt="team avatar">
         </div>
-
-        <div class="container">
+      </header>
+        <div class="container-one">
           <div class="main-content">
             <h1>Who are playing?</h1>
             <form id="addForm">
               <input type="text" class="formInput" id="item">
-              <input type="submit" class="submitButton" value="Submit">
+              <div class="centerButton">
+                <input type="submit" class="submitButton" value="Submit">
+              </div>
             </form>
             <h2 class="title">Players</h2>
             <ul id="items" class="list-group">
@@ -29,17 +31,17 @@
             </ul>
         </div>
       </div>
-      </header>
+
     </section>
 
-    <section class="container">
+    <section class="container-two">
       <div class="team-splits">
         <div class="team-button">
           <button>Duo</button>
           <button>3 Man Squad</button>
           <button>4 Man Squad</button>
         </div>
-        <div class="left-team-border">
+        <div class="team-border">
           <ul id="teams" class="list-group-teams">
             <li class="list-group-item">Player 1</li>
             <li class="list-group-item">Player 2</li>
@@ -48,7 +50,7 @@
           </ul>
         </div>
 
-        <div class="right-team-border">
+        <div class="team-border">
           <ul id="teams" class="list-group-teams">
             <li class="list-group-item">Player 1</li>
             <li class="list-group-item">Player 2</li>
