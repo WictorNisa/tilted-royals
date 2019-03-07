@@ -14,6 +14,7 @@ textarea, input {
   outline: none;
  }
 
+button:focus {outline:0;}
 /* HEADER SECTION */
 
 .main-wrapper {
@@ -130,6 +131,7 @@ input[type=text] {
   border: 2px solid black;
   transform: scale(1.1);
 }
+
 
 .main-content {
   display: flex;
@@ -262,6 +264,26 @@ ul {
   border-radius: .25rem;
   margin-left: 1em;
   transition: transform 0.50s;
+}
+
+#rando {
+  width: 300px;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  margin-left: 1em;
+}
+
+#rando:active {
+  background-color: #343a40;
+  color: #F6D44F;
+  border: 2px solid #F6D44F;
 } 
 
 #fourMan:hover{
@@ -296,6 +318,13 @@ ul {
   align-items: center;
 }
 
+.rando-contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
 .footo {
   border-top: 2px solid #F6D44F;
   background: #0F2027;  /* fallback for old browsers */
@@ -310,6 +339,7 @@ p {
   text-align: center;
   align-items: center;
   color: #F6D44F;
+
 }
 
 #lal {
