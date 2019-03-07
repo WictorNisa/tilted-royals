@@ -27,6 +27,13 @@ itemList.addEventListener('click', removeItem);
 
 defaultLayout();
 
+const inputArr = [];
+
+// function addTo() {
+//   inputArr.push(document.getElementById('items').value);
+//   console.log(inputArr);
+// }
+
 function defaultLayout() {
   duoSquad.style.display = 'none';
   threeSquad.style.display = 'none';
@@ -64,7 +71,11 @@ function addItem(e) {
   itemList.appendChild(li);
 
   // Clears the input automatically
-  const formInput = document.querySelector('.formInput').value="";
+  // const formInput = document.querySelector('.formInput').value="";
+
+  // takes input from the text field and pushes it into an array
+  inputArr.push(document.querySelector('.formInput').value.toLowerCase());
+  console.log(inputArr);
 
 }
 
@@ -75,7 +86,6 @@ function removeItem(e){
     itemList.removeChild(li);
   }
 }
-
 
 function duoLayout(e) {
     fourSquad.style.display = 'none';
