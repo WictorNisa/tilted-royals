@@ -43,10 +43,7 @@ textarea, input {
 .container-two {
   grid-area: containertwo;
   grid-column: 2 / 3;
-  margin-bottom: 2em;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
+  margin-bottom: 4em;
 }
 
 .team-splits{
@@ -55,9 +52,8 @@ textarea, input {
 }
 
 .team-border {
-  /* display: flex;
-  justify-content: space-between; */
-  /* grid-column: 1 / 4; */
+  border-bottom: 1px solid #343a40;
+  border-top: 1px solid #343a40;
   width: 300px;
 }
 
@@ -207,13 +203,20 @@ ul {
   padding: .5rem .75rem;
   font-size: 1rem;
   border-radius: .25rem;
-  transition: all 0.50s;
+  transition: transform 0.50s;
 }
 
 #duo:hover {
-  background-color: white;
+  background-color: #343a40;
   color: black;
   border: 2px solid black;
+  transform: scale(1.01);
+}
+
+#duo:active {
+  background-color: #343a40;
+  color: #F6D44F;
+  border: 2px solid #F6D44F;
   transform: scale(1.01);
 }
 
@@ -229,13 +232,20 @@ ul {
   font-size: 1rem;
   border-radius: .25rem;
   margin-left: 1em;
-  transition: all 0.50s;
+  transition: transform 0.50s;
 }
 
 #threeMan:hover {
-  background-color: white;
+  background-color: #343a40;
   color: black;
   border: 2px solid black;
+  transform: scale(1.01);
+}
+
+#threeMan:active {
+  background-color: #343a40;
+  color: #F6D44F;
+  border: 2px solid #F6D44F;
   transform: scale(1.01);
 }
 
@@ -251,22 +261,34 @@ ul {
   font-size: 1rem;
   border-radius: .25rem;
   margin-left: 1em;
-  transition: all 0.50s;
+  transition: transform 0.50s;
 } 
 
 #fourMan:hover{
-  background-color: white;
+  background-color: #343a40;
   color: black;
   border: 2px solid black;
   transform: scale(1.01);
 }
 
+#fourMan:active {
+  background-color: #343a40;
+  color: #F6D44F;
+  border: 2px solid #F6D44F;
+  transform: scale(1.01);
+}
 
 .duo-squad {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.threeman-squad {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .fourman-squad {
   display: flex;
@@ -274,13 +296,22 @@ ul {
   align-items: center;
 }
 
-
-.is-visible {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footo {
+  border-top: 2px solid #F6D44F;
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100px;
 }
 
-.not-visisble {
-  d
+p {
+  font-size: 1.2em;
+  padding-top: 1em;
+  text-align: center;
+  align-items: center;
+  color: #F6D44F;
+}
+
+#lal {
+  color: #F6D44F;
 }

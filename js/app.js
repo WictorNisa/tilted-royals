@@ -80,12 +80,12 @@ function removeItem(e){
 function duoLayout(e) {
     fourSquad.style.display = 'none';
     threeSquad.style.display = 'none';
-    duoSquad.style.display = 'block';
+    duoSquad.style.display = 'flex';
 }
 
 function threeSquadLayout(e) {
     fourSquad.style.display = 'none';
-    threeSquad.style.display = 'block';
+    threeSquad.style.display = 'flex';
     duoSquad.style.display = 'none';
 }
 
