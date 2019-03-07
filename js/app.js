@@ -2,11 +2,35 @@ const form = document.getElementById('addForm');
 const itemList = document.getElementById('items');
 
 
+const duoButton = document.getElementById('duo');
+const threeSquadButton = document.getElementById('threeMan');
+const fourSquadButton = document.getElementById('fourMan');
+
+const fourSquad = document.querySelector('.fourman-squad');
+const threeSquad = document.querySelector('.threeman-squad');
+const duoSquad = document.querySelector('.duo-squad');
+
+
+const fourDisplay = fourSquad.style.display;
+
+// change the layout based on button click
+duoButton.addEventListener('click', duoLayout);
+threeSquadButton.addEventListener('click', threeSquadLayout);
+fourSquadButton.addEventListener('click', fourSquadLayout);
+
 // form submit event
 form.addEventListener('submit', addItem);
 
 // delete EVENT
 itemList.addEventListener('click', removeItem);
+
+
+defaultLayout();
+
+function defaultLayout() {
+  duoSquad.style.display = 'none';
+  threeSquad.style.display = 'none';
+}
 
 function addItem(e) {
   e.preventDefault();
@@ -50,4 +74,23 @@ function removeItem(e){
     const li = e.target.parentElement;
     itemList.removeChild(li);
   }
+}
+
+
+function duoLayout(e) {
+    fourSquad.style.display = 'none';
+    threeSquad.style.display = 'none';
+    duoSquad.style.display = 'block';
+}
+
+function threeSquadLayout(e) {
+    fourSquad.style.display = 'none';
+    threeSquad.style.display = 'block';
+    duoSquad.style.display = 'none';
+}
+
+function fourSquadLayout(e) {
+    fourSquad.style.display = 'flex';
+    threeSquad.style.display = 'none';
+    duoSquad.style.display = 'none';
 }
